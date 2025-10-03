@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu } from "lucide-react";
+import { Github, Menu } from "lucide-react";
 import Link from "next/link";
 
 export default function Header() {
@@ -14,7 +14,7 @@ export default function Header() {
             <div className="max-w-6xl mx-auto flex justify-between items-center py-4 px-6 md:px-4">
                 {/* Logo */}
                 <Link
-                href={"/"}
+                    href={"/"}
                     className={`text-2xl font-bold transition-colors duration-300`}
                 >
                     HarshTech
@@ -50,6 +50,11 @@ export default function Header() {
                     <Button variant="default" className="ml-4">
                         Subscribe
                     </Button>
+                    <Link href={"https://github.com/harshadhatagale/personal-blog-1.git"}>
+                        <Button variant={"outline"} size={"icon"}>
+                            <Github />
+                        </Button>
+                    </Link>
                 </nav>
 
                 {/* Mobile Nav Icon */}
